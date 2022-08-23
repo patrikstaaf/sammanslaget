@@ -48,9 +48,9 @@ body {
   max-width: 72rem;
   margin-top: 25px;
 }
-.unity-mobile #unity-footer {
+/* .unity-mobile #unity-footer {
   display: none;
-}
+} */
 #unity-webgl-logo {
   float: left;
   width: 204px;
