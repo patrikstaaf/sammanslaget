@@ -4,7 +4,8 @@ import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
 import Image1 from '/images/image1.png';
 import ImageNova from '/images/nova.png';
-import ImageSandra from '/images/sandra.jpg';
+import ImageSandra from '/images/sandra.webp';
+import ImagePatrik from '/images/patrik.webp';
 ---
 
 <Layout
@@ -12,16 +13,16 @@ import ImageSandra from '/images/sandra.jpg';
   description='Kort beskrivning om vi som skapat denna sida'
   canonicalURL='https://yrgo-sammanslaget.vercel.app/about'
 >
-  <section class='max-w-6xl mx-auto px-4 xl:px-0 mt-[110px]'>
+  <main class='max-w-6xl mx-auto px-4 xl:px-0 mt-[110px]'>
     <div class='flex-col sm:flex sm:flex-row sm:justify-between'>
       <div>
         <h1 class='font-semibold text-[46px]'>Om Oss</h1>
-        <p class='w-full max-w-lg leading-8 mt-[16px]'>
+        <p class='w-full max-w-xl leading-8 mt-[16px] text-[20px]'>
           Vi som står bakom denna interaktiva upplevelse är en grupp studenter
           från Yrgo. Tillsammans har vi skapat vårt koncept och utifrån våra
           respektive utbildningar har vi bidragit med det vi kan bäst.
         </p>
-        <p class='w-full max-w-lg leading-8 mt-[16px]'>
+        <p class='w-full max-w-xl leading-8 mt-[16px] text-[20px]'>
           Läs mer om Yrgo och våra utbildningar på <a
             href='https://yrgo.se'
             class='underline'
@@ -60,7 +61,7 @@ import ImageSandra from '/images/sandra.jpg';
         description='Som webbutvecklare har jag skapat denna webbplats och ansvarat för dess funktion, ​​implementation av Unity samt publicering på webben.'
         website='https://google.com'
         email='hej@hej.com'
-        image={Image1}
+        image={ImagePatrik}
       />
       <Card
         name='Nova Lindberg'
@@ -79,6 +80,6 @@ import ImageSandra from '/images/sandra.jpg';
         image={Image1}
       />
     </div>
-  </section>
+  </main>
   <Footer />
 </Layout>

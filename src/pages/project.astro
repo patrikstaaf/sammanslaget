@@ -1,13 +1,81 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout
-  title='FAQ - Klädd för förändring'
-  description='Kort förklaring hur spelet fungerar'
-  canonicalURL='https://yrgo-sammanslaget.vercel.app/faq'
+  title='Projektet - Klädd för förändring'
+  description='Förklaring om projektet'
+  canonicalURL='https://yrgo-sammanslaget.vercel.app/project'
 >
-  <section class='max-w-6xl text-center mx-auto'>
-    <h1>FAQ</h1>
-  </section>
+  <main class='mt-[110px]'>
+    <div
+      class='flex-col sm:flex sm:flex-row sm:justify-between max-w-6xl mx-auto px-4 xl:px-0'
+    >
+      <div>
+        <h1 class='font-semibold text-[46px]'>Projektet</h1>
+        <p class='w-full max-w-xl leading-8 mt-[16px] text-[20px]'>
+          <span class='font-bold'>Klädd för förändring</span> är en interaktiv upplevelse
+          skapad av studenter på Yrgo i samarbete med Björkåfrihet som en del av
+          det årliga Sammanslaget.
+        </p>
+      </div>
+      <div>
+        <img src='/images/flag.webp' alt='En flagga' class='lg:mr-20 mx-auto' />
+      </div>
+    </div>
+    <section
+      class='flex items-center justify-center text-center bg-[#f1d6d4] py-28 w-full'
+    >
+      <div class='max-w-6xl mx-auto px-4 xl:px-0'>
+        <h2
+          class='text-[26px] md:text-[37px] text-[#DE3831] w-full max-w-3xl font-medium'
+        >
+          Små handlingar kan göra stor skillnad.
+        </h2>
+        <h2
+          class='text-[26px] md:text-[37px] text-[#DE3831] w-full max-w-3xl font-medium'
+        >
+          Klicka på olika föremål i butikens skyltfönster och se hur du kan klä
+          dig för förändring.
+        </h2>
+      </div>
+    </section>
+    <section
+      class='mt-40 flex flex-col lg:flex lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto px-4 xl:px-0'
+    >
+      <div class='mx-auto'>
+        <img src='/images/bjorkafrihet-big.webp' alt='Björk o Frihet logga' />
+      </div>
+      <div class='mx-auto mt-10 lg:mt-0 lg:mx-0'>
+        <p class='w-full max-w-lg leading-8 text-[20px]'>
+          Björkåfrihet är en ideell förening med över 50 års erfarenhet av
+          second hand och solidaritetsarbete. Genom internationellt
+          solidaritetsarbete och opinionsarbete stödjer de organisationer som
+          arbetar mot förtryck runt om i världen.
+        </p>
+      </div>
+    </section>
+    <section
+      class='mt-32 flex flex-col lg:flex lg:flex-row lg:justify-between lg:items-center max-w-6xl mx-auto px-4 xl:px-0'
+    >
+      <div class='mx-auto'>
+        <p class='w-full max-w-md leading-8 text-[20px]'>
+          Vill du vara med och påverka IRL? Handla i Björkåfrihets butiker,
+          lämna dina använda grejer eller bli medlem. Läs mer på <a
+            href='https://bjorkafrihet.se'
+            class='underline text-[#942621]'
+            >bjorkafrihet.se
+          </a>
+        </p>
+        <p class='w-full max-w-lg leading-8 text-[20px] mt-8'>
+          Samtlig fakta på webbplatsen är hämtad från bjorkafrihet.se
+        </p>
+      </div>
+      <div class='mx-auto mt-10'>
+        <img src='/images/clothes.webp' alt='Kläder i svartvit' />
+      </div>
+    </section>
+  </main>
+  <Footer />
 </Layout>
