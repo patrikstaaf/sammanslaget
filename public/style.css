@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'frutiger';
+  src: url('/fonts/Frutiger_bold.woff') format('woff'),
+    url('/fonts/Frutiger.woff') format('woff');
+}
+
 body {
   padding: 0;
   margin: 0;
