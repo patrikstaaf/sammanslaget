@@ -1,6 +1,8 @@
 <section id='game' class='w-full py-6'>
-  <div id='unity-container' class='unity-desktop max-w-full'>
-    <canvas id='unity-canvas' class='max-w-6xl mx-auto w-full'></canvas>
+  <div id='unity-container' class='unity-desktop max-w-6xl w-full mx-auto'>
+    <canvas
+      id='unity-canvas'
+      class='max-w-6xl mx-auto w-full rounded-md md:rounded-xl'></canvas>
     <div id='unity-loading-bar'>
       <div id='unity-logo'></div>
       <div id='unity-progress-bar-empty'>
@@ -10,7 +12,7 @@
     <div id='unity-warning'></div>
     <div id='unity-footer'>
       <!-- <div id='unity-webgl-logo'></div> -->
-      <div id='unity-fullscreen-button'>
+      <div id='unity-fullscreen-button' class='hover:scale-110'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -32,6 +34,13 @@
       </div>
       <!-- <div id='unity-build-title'>Bjork&Frihet</div> -->
     </div>
+  </div>
+  <div class='max-w-6xl w-full mx-auto sm:hidden text-center text-sm pt-10'>
+    <p>
+      WebGL builds are not supported on mobile devices, however, it still might
+      work. If so, please turn your mobile to landscape view in order to
+      interact with the game.
+    </p>
   </div>
 </section>
 
