@@ -8,17 +8,24 @@
         <li>
           <a
             href='/about'
-            class='text-[20px] text-[#5B5D6B] hover:text-black active:text-black active:border-b-2 active:border-[#DE3831]'
+            data-link='/about'
+            class='text-[20px] text-[#5B5D6B] hover:text-black'
             >Om oss
           </a>
         </li>
         <li>
-          <a href='/project' class='text-[20px] text-[#5B5D6B] hover:text-black'
+          <a
+            href='/project'
+            data-link='/project'
+            class='text-[20px] text-[#5B5D6B] hover:text-black'
             >Projektet
           </a>
         </li>
         <li>
-          <a href='/' class='text-[20px] text-[#5B5D6B] hover:text-black'
+          <a
+            href='/'
+            data-link='/'
+            class='text-[20px] text-[#5B5D6B] hover:text-black'
             >Startsidan
           </a>
         </li>
@@ -26,3 +33,24 @@
     </div>
   </nav>
 </header>
+
+<script>
+  // @ts-nocheck
+  const activePage = window.location.pathname;
+  document.querySelectorAll('ul a').forEach((link) => {
+    if (link.dataset['link'] === activePage) {
+      link.classList.add('active');
+    }
+  });
+  console.log(activePage);
+</script>
+
+<style>
+  .active {
+    color: #000;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #de3831;
+    text-decoration-thickness: 3px;
+  }
+</style>
