@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Button from '../components/ButtonCTA.astro';
 import Footer from '../components/Footer.astro';
 import Image1 from '/images/image1.png';
 import ImageNova from '/images/nova.png';
@@ -18,18 +19,23 @@ import ImageAmanda from '/images/amanda.webp';
     <div class='flex-col sm:flex sm:flex-row sm:justify-between'>
       <div>
         <h1 class='font-semibold text-[46px]'>Om Oss</h1>
-        <p class='w-full max-w-xl leading-8 mt-[16px] text-[20px]'>
+        <p
+          class='w-full max-w-xl leading-8 mt-[16px] text-[20px] text-[#404252] mb-8 sm:mb-16'
+        >
           Vi som står bakom denna interaktiva upplevelse är en grupp studenter
           från Yrgo. Tillsammans har vi skapat vårt koncept och utifrån våra
           respektive utbildningar har vi bidragit med det vi kan bäst.
         </p>
-        <p class='w-full max-w-xl leading-8 mt-[16px] text-[20px]'>
+        <!-- <p
+          class='w-full max-w-xl leading-8 mt-[16px] text-[20px] text-[#404252]'
+        >
           Läs mer om Yrgo och våra utbildningar på <a
             href='https://yrgo.se'
             class='underline'
             >yrgo.se
           </a>
-        </p>
+        </p> -->
+        <Button url='https://yrgo.se' text='Läs mer om YRGO' />
       </div>
       <div>
         <img src='/images/shoes.png' alt='Ett par skor' class='lg:mr-20 mx-auto'
