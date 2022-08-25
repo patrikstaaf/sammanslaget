@@ -7,9 +7,6 @@ module.exports = {
         frutiger: ['Frutiger', 'sans'],
       },
     },
-    screens: {
-      phone: '500px',
-    },
   },
   plugins: [],
 };
