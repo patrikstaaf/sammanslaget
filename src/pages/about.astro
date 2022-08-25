@@ -16,8 +16,10 @@ import ImageJesper from '/images/jesper.webp';
   description='Kort beskrivning om vi som skapat denna sida'
   canonicalURL='https://yrgo-sammanslaget.vercel.app/about'
 >
-  <main class='max-w-6xl mx-auto px-4 xl:px-0 mt-[110px]'>
-    <div class='flex-col sm:flex sm:flex-row sm:justify-between'>
+  <main class='mt-[110px]'>
+    <div
+      class='flex-col sm:flex sm:flex-row sm:justify-between max-w-6xl mx-auto px-4 xl:px-0'
+    >
       <div>
         <h1 class='font-semibold text-[46px]'>Om Oss</h1>
         <p
@@ -43,50 +45,57 @@ import ImageJesper from '/images/jesper.webp';
         />
       </div>
     </div>
-    <h2 class='font-medium text-[29px] mt-[50px] sm:mt-0'>Teamet</h2>
-    <div
-      class='mb-[260px] mt-[228px] flex flex-wrap gap-y-52 gap-x-32 w-full items-center justify-center'
-    >
-      <Card
-        name='Sandra Caraan'
-        role='Game Creator Artist'
-        description='Som Game Creator Artist har skapat och illustrerat skyltfönstret som vårt bidrag bygger på, ett arbete som gjorts i Photoshop.'
-        website='https://google.com'
-        email='mailto:hej@hej.com'
-        image={ImageSandra}
-      />
-      <Card
-        name='Jesper Johansson'
-        role='Game Creator Programmer'
-        description='Med kodning och utveckling i Unity har jag som Game Creator Programmer ansvarat för att skyltfönstret är en interaktiv upplevelse.'
-        website='https://google.com'
-        email='mailto:hej@hej.com'
-        image={ImageJesper}
-      />
-      <Card
-        name='Patrik Staaf'
-        role='Webbutvecklare'
-        description='Som webbutvecklare har jag skapat denna webbplats och ansvarat för dess funktion, ​​implementation av Unity samt publicering på webben.'
-        website='https://google.com'
-        email='mailto:hej@hej.com'
-        image={ImagePatrik}
-      />
-      <Card
-        name='Nova Lindberg'
-        role='UX Designer'
-        description='I rollen som UX Designer har jag lett idégenerering, skapat wireframes och style guide i Figma och säkerställt användarvänligheten.'
-        website='https://google.com'
-        email='mailto:hej@hej.com'
-        image={ImageNova}
-      />
-      <Card
-        name='Amanda Cremanti'
-        role='UX Designer'
-        description='I projektet har jag stöttat som projektledare, lett idégenerering, producerat copy och style guide samt säkerställt användarvänligheten.'
-        website='https://google.com'
-        email='mailto:hej@hej.com'
-        image={ImageAmanda}
-      />
+
+    <div class='bg-[#F3F4F8]'>
+      <h2
+        class='font-medium text-[29px] mt-[50px] sm:mt-0 max-w-6xl mx-auto px-4 xl:px-0 pt-16'
+      >
+        Teamet
+      </h2>
+      <div
+        class='mt-[228px] flex flex-wrap gap-y-52 gap-x-32 w-full items-center justify-center max-w-6xl mx-auto px-4 xl:px-0 pb-32'
+      >
+        <Card
+          name='Sandra Caraan'
+          role='Game Creator Artist'
+          description='Som Game Creator Artist har skapat och illustrerat skyltfönstret som vårt bidrag bygger på, ett arbete som gjorts i Photoshop.'
+          website='https://google.com'
+          email='mailto:hej@hej.com'
+          image={ImageSandra}
+        />
+        <Card
+          name='Jesper Johansson'
+          role='Game Creator Programmer'
+          description='Med kodning och utveckling i Unity har jag som Game Creator Programmer ansvarat för att skyltfönstret är en interaktiv upplevelse.'
+          website='https://google.com'
+          email='mailto:hej@hej.com'
+          image={ImageJesper}
+        />
+        <Card
+          name='Patrik Staaf'
+          role='Webbutvecklare'
+          description='Som webbutvecklare har jag skapat denna webbplats och ansvarat för dess funktion, ​​implementation av Unity samt publicering på webben.'
+          website='https://google.com'
+          email='mailto:hej@hej.com'
+          image={ImagePatrik}
+        />
+        <Card
+          name='Nova Lindberg'
+          role='UX Designer'
+          description='I rollen som UX Designer har jag lett idégenerering, skapat wireframes och style guide i Figma och säkerställt användarvänligheten.'
+          website='https://google.com'
+          email='mailto:hej@hej.com'
+          image={ImageNova}
+        />
+        <Card
+          name='Amanda Cremanti'
+          role='UX Designer'
+          description='I projektet har jag stöttat som projektledare, lett idégenerering, producerat copy och style guide samt säkerställt användarvänligheten.'
+          website='https://google.com'
+          email='mailto:hej@hej.com'
+          image={ImageAmanda}
+        />
+      </div>
     </div>
   </main>
   <Footer />
