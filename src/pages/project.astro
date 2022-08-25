@@ -10,7 +10,7 @@ import Footer from '../components/Footer.astro';
 >
   <main class='mt-[110px]'>
     <div
-      class='flex-col sm:flex sm:flex-row sm:justify-between max-w-6xl mx-auto px-4 xl:px-0'
+      class='flex-col sm:flex sm:flex-row sm:justify-between max-w-6xl mx-auto px-4 xl:px-0 relative'
     >
       <div>
         <h1 class='font-semibold text-[46px]'>Projektet</h1>
@@ -20,21 +20,27 @@ import Footer from '../components/Footer.astro';
           det årliga Sammanslaget.
         </p>
       </div>
-      <div>
-        <img src='/images/flag.webp' alt='En flagga' class='lg:mr-20 mx-auto' />
+      <div
+        class='absolute right-0 xl:right-[-5%] bottom-[-150%] sm:bottom-[-240%]'
+      >
+        <img
+          src='/images/flag.webp'
+          alt='En flagga'
+          class='mx-auto max-w-sm sm:max-w-none'
+        />
       </div>
     </div>
     <section
-      class='flex items-center justify-center text-center bg-[#f1d6d4] py-28 w-full'
+      class='flex items-center justify-center text-center bg-[#f1d6d4] py-28 w-full mt-[300px]'
     >
       <div class='max-w-6xl mx-auto px-4 xl:px-0'>
         <h2
-          class='text-[26px] md:text-[37px] text-[#DE3831] w-full max-w-3xl font-medium'
+          class='text-[20px] max-w-[14rem] mx-auto sm:text-[26px] md:text-[37px] text-[#DE3831] w-full sm:max-w-3xl font-medium'
         >
           Små handlingar kan göra stor skillnad.
         </h2>
         <h2
-          class='text-[26px] md:text-[37px] text-[#DE3831] w-full max-w-3xl font-medium'
+          class='text-[20px] max-w-[14rem] mx-auto sm:text-[26px] md:text-[37px] text-[#DE3831] w-full sm:max-w-3xl font-medium'
         >
           Klicka på olika föremål i butikens skyltfönster och se hur du kan klä
           dig för förändring.
