@@ -48,6 +48,7 @@
   var progressBarFull = document.querySelector('#unity-progress-bar-full');
   var fullscreenButton = document.querySelector('#unity-fullscreen-button');
   var warningBanner = document.querySelector('#unity-warning');
+  const footer = document.getElementById('unity-footer');
 
   function unityShowBanner(msg, type) {
     function updateBannerVisibility() {
@@ -100,8 +101,13 @@
 
   loadingBar.style.display = 'block';
 
-  const iOSDevice = navigator.userAgent;
-  console.log(iOSDevice);
+  const unityFooter = document.getElementById('unity-footer');
+  const device = navigator.userAgent;
+  console.log(device);
+  if (device.includes('iPhone')) {
+    unityFooter.remove();
+  }
+
   var script = document.createElement('script');
   script.src = loaderUrl;
   script.onload = () => {
@@ -110,16 +116,9 @@
     })
       .then((unityInstance) => {
         loadingBar.style.display = 'none';
+
         fullscreenButton.onclick = () => {
-          if (
-            iOSDevice.includes('iPhone') ||
-            iOSDevice.includes('iPad') ||
-            iOSDevice.includes('iPod')
-          ) {
-            unityInstance.SetFullscreen(0);
-          } else {
-            unityInstance.SetFullscreen(1);
-          }
+          unityInstance.SetFullscreen(1);
         };
       })
       .catch((message) => {
